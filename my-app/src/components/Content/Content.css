@@ -1,0 +1,36 @@
+.content-container {
+  font-family: "Times New Roman", Times, serif;
+  margin: 20px;
+  font-size: 20px;
+}
+
+ul,
+ol {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+li {
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.active1 {
+  background-color: SaddleBrown;
+  color: BurlyWood;
+}
+.active1-soft {
+  background-color: peru;
+  color: wheat;
+}
+.active2 {
+  background-color: black;
+  color: red;
+}
+.active2-soft {
+  background-color: rgb(60, 60, 60);
+  color: lightcoral;
+}
