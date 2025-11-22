@@ -11,8 +11,8 @@ function Image() {
   ]);
 
   const addImage = () => {
-    const lastSize = images[images.length - 1].size;
-    setImages([...images, { url: images[0].url, size: lastSize }]);
+    const baseSize = images[0].size;
+    setImages([...images, { url: images[0].url, size: baseSize }]);
   };
 
   const increaseImage = () => {
