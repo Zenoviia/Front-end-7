@@ -13,9 +13,13 @@ ol {
 }
 
 li {
-  cursor: pointer;
   padding: 4px 8px;
   border-radius: 4px;
+  cursor: text;
+}
+
+li.clickable {
+  cursor: pointer;
 }
 
 .active1 {
@@ -33,4 +37,8 @@ li {
 .active2-soft {
   background-color: rgb(60, 60, 60);
   color: lightcoral;
+}
+
+h3 {
+  cursor: text;
 }

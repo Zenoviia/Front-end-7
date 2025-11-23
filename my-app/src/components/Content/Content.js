@@ -51,6 +51,7 @@ class Content extends Component {
           {hobbies.map((item, index) => {
             let className = "";
             let onClick = null;
+            let clickable = false;
 
             if (item === "Дивитися серіали") {
               className =
@@ -58,6 +59,7 @@ class Content extends Component {
                   ? this.state.firstState
                   : "";
               onClick = this.toggleFirst;
+              clickable = true;
             }
 
             if (item === "Дивитися Формулу-1") {
@@ -66,10 +68,15 @@ class Content extends Component {
                   ? this.state.secondState
                   : "";
               onClick = this.toggleSecond;
+              clickable = true;
             }
 
             return (
-              <li key={index} className={className} onClick={onClick}>
+              <li
+                key={index}
+                className={`${className} ${clickable ? "clickable" : ""}`}
+                onClick={onClick}
+              >
                 {item}
               </li>
             );
